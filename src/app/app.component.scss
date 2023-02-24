@@ -1,36 +1,105 @@
-.custom-select{
-    border: none;
-    display: flex;
-    flex: 1;
-
-    border-width: 1px;
+.container{
+    background:radial-gradient(circle ,midnightblue,black);
+    width:50%;
+    padding-bottom: 30vh;
+    // margin-top: 10vw;
+}
+.img{
+    width:20vw;
+    position: relative;
+    left: 29%;
+    margin-top: 40px;
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    text-align: center;
+    color:rgb(173, 23, 53);
+    letter-spacing: 2px;
+}
+.title1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+    color:antiquewhite;
+    letter-spacing: 2px;
+}
+.ribbon {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+    font-weight: 900;
+    width: 50%;
+    font-style: italic;   
+    position: relative;
+    background: #1bbd79f5;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000 ;
+    text-align: center;
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+   }
+   .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #1bbd79f5;
+    z-index: -1;
+   }
+   .ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+   }
+   .ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+   }
+   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
     border-style: solid;
-    border-color: rgb(201, 196, 196);
+    border-color: #1bbd79f5 transparent transparent transparent;
+    bottom: -1em;
+   }
+   .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+   }
+   .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+   }
+   .non-semantic-protector { position: relative; z-index: 1; }
+
    
-    border-radius: 5px;
-    margin-top: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
+   .animate-charcter
+{
+//    text-transform: uppercase;
+  background: linear-gradient(
+    -225deg,
+    #14e9de 0%,
+    #6f19ca 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size:cover;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+//   text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+//   display: inline-block;
+      font-size: 19px;
 }
 
-
-/* .custom-select:active{
-
-} */
-
-.form-sel{
-    display: flex;
-    flex: 1;
-    margin-bottom: 0;
-}
-
-
-.container-fluid{
-    background-color:peachpuff;
-}
-#text{
-  /* margin-top:0; */
-  padding-top:-calc(10px);
-
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

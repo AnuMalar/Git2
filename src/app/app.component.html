@@ -1,97 +1,23 @@
-<div class="container-fluid">
-    
-  <h3>Datacamp Enrollment Form</h3>
-  <h2>Git works</h2>
-
-  <form novalidate>
-
-      <!-- {{frm.form.valid}} -->
-<!-- 
-      {{frm.value | json}}
-      <hr/>
-      {{userModel | json}}
-      <hr/> -->
-
-      <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" required="">
-          <!-- <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small> -->
+<div class="container">
+  <img src="https://www.cascadia.edu/_resources/img/Spring%202023.gif" alt="" class="img">
+  <h2 class="title">Graduation <br><span class="title1">Ceremony</span></h2>
+  <div class="non-semantic-protector"> 
+    <h1 class="ribbon">
+      <strong class="ribbon-content">Class of 2023</strong>
+   </h1> 
+  </div>
+<br>
+   <div class="container1">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter"> TIME : 10am</h3>
+        <h3 class="animate-charcter">DATE : 24TH MARCH</h3>
+        <h3 class="animate-charcter">VENUE : Vedanta Hotel,Coimbatore</h3>
       </div>
-      <!-- //tracking state and validity -->
-     
-      <!-- {{name.className}} -->
-      <!-- {{name.invalid}} -->
-
-
-      <div class="form-group">
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" class="form-control">
-      </div>
-
-      <!-- //validation with visual -->
-      <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="text" id="phone">
-           <!-- <small [class.d-none]="phone.valid || phone.untouched">must be 10</small> -->
-          
-           <!-- //Dispalying Error message -->
-           <!-- <div *ngIf= "phone.errors && (phone.invalid || phone.touched)">
-              <small class="text-danger" *ngIf= "phone.errors.required" >Phone number is required</small>
-              <small class="text-danger" *ngIf= "phone.errors.pattern" >Phone number must be 10 digits</small>
-
-           </div>
-            -->
-      </div>
-      <!-- //select control validation -->
-      <!-- <div class="form-sel">
-          <select (blur)="validateCourse(course.value)" (change)="validateCourse(course.value)" 
-          class="custom-select" id="course" name="course"   #course="ngModel" 
-          [class.is-invalid]= "courseHasError && course.touched" [(ngModel)]="userModel.courses" >
-              
-              <option value="Default" >I am interested in</option>
-              <option *ngFor= "let course of courses"  >{{course}}</option>
-          </select>   
-      </div>
-      <small id="text" class="text-danger"  [class.d-none]="!courseHasError || course.untouched">Please select the course name</small> -->
-
-
-
-      <!-- <div ngModelGroup="address">
-          <div class="form-group">
-              <label for="street">Street</label>
-              <input type="text" name="street" class="form-control" ngModel>
-          </div>
-          <div class="form-group">
-              <label for="street">City</label>
-              <input type="text" name="city" class="form-control" ngModel>
-          </div>
-          <div class="form-group">
-              <label for="street">State</label>
-              <input type="text" name="state" class="form-control" ngModel>
-          </div> 
-
-      </div> -->
-
-      <div class="mb-3 mt-3">
-          <label>Time Preference</label>
-          <div class="form-check">
-              <input type="radio" id="time" class="form-check-input" name="time" value="Morning" >
-              <label for="time" class="form-check-label">Morning(9AM - 12PM)</label>
-          </div>
-          <div class="form-check">
-              <input type="radio" id="time" class="form-check-input" name="time" value="Evening" >
-              <label for="time" class="form-check-label">Evening(5PM - 8PM)</label>
-          </div>
-      </div>
-
-      
-      <div class="form-check mb-3">
-          <input type="checkbox" class="form-check-input" name="term" id="term" >
-          <label for="term" class="form-check-label">Send me promotional offers</label>
-      </div>
-      
-      <!-- //Form validation -->
-      <button  class="btn btn-primary">Form Submit</button>
-
-  </form>
+    </div>
+  </div>    
 </div>
+  
+<!-- <a href="https://codepen.io/uiswarup/full/wvjZgar" target="_blank"> -->
+  
+    <!-- </a> -->
