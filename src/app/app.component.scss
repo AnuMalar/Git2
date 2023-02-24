@@ -1,0 +1,36 @@
+.custom-select{
+    border: none;
+    display: flex;
+    flex: 1;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(201, 196, 196);
+   
+    border-radius: 5px;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+
+/* .custom-select:active{
+
+} */
+
+.form-sel{
+    display: flex;
+    flex: 1;
+    margin-bottom: 0;
+}
+
+
+.container-fluid{
+    background-color:peachpuff;
+}
+#text{
+  /* margin-top:0; */
+  padding-top:-calc(10px);
+
+}
